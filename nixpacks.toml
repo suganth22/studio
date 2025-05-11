@@ -1,8 +1,11 @@
 [phases.setup]
-nixPkgs = ["nodejs-12_x"]
+nixPkgs = ["nodejs-16_x"]
+
+[phases.install]
+cmds = ["yarn set version berry", "yarn install --ignore-engines"]
 
 [phases.build]
-cmds = ["yarn install"]
+cmds = ["yarn build"]
 
 [phases.start]
 cmd = "yarn start"
