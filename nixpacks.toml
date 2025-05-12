@@ -1,11 +1,14 @@
+[build]
+nixpacksVersion = "latest"
+
+[nodejs]
+version = "20"
+
 [phases.setup]
-nixPkgs = ["nodejs_18", "yarn"]
+nixPkgs = ["nodejs", "corepack"]
 
 [phases.install]
-cmds = ["yarn install"]
+cmds = ["corepack enable", "yarn install"]
 
-[phases.build]
-cmds = ["yarn build"]
-
-[phases.start]
+[start]
 cmd = "yarn start"
