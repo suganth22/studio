@@ -2,7 +2,7 @@
 nixPkgs = ["nodejs_18", "yarn"]
 
 [phases.install]
-cmds = ["yarn set version classic", "yarn install"]
+cmds = ["yarn install"]
 
 [phases.build]
 cmds = ["yarn build"]
