@@ -1,5 +1,6 @@
 {
   "name": "@botpress/studio",
+  "private": true,
   "version": "0.0.68",
   "description": "Create your virtual assistants",
   "repository": "https://github.com/botpress/studio.git",
