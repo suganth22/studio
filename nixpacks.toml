@@ -2,7 +2,7 @@
 nixPkgs = ["nodejs-18_x", "yarn"]
 
 [phases.install]
-cmds = ["yarn set version berry", "yarn install --ignore-engines"]
+cmds = ["yarn set version classic", "yarn install"]
 
 [phases.build]
 cmds = ["yarn build"]
