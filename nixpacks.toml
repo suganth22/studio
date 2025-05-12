@@ -8,4 +8,4 @@ cmds = ["yarn set version classic", "yarn install"]
 cmds = ["yarn build"]
 
 [phases.start]
-cmd = "yarn start"
+cmd = ["yarn start"]
